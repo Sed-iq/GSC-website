@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.noto {
+  font-family: "Noto Sans TC", sans-serif;
+}
