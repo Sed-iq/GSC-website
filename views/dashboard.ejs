@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/public/images/GSC_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/public/styles/design.css" />
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <title>Grown&Sexy</title>
+  </head>
+  <body class="bg-[#f1f1f1]">
+    <%- include("partials/dashboard-heading.ejs") -%>
+    <div
+      id="hero-section-dashboard"
+      class="sm:h-[29em] text-white center border-black"
+    >
+      <div class="sm:w-[70%] center sm:space-y-5 flex-col">
+        <p class="noto text-center sm:text-4xl">
+          Fun, Dating and Connection <br />
+          All in One Place
+        </p>
+        <div class="center w-full">
+          <a href="/dashboard/events">
+            <button
+              class="sm:w-[9em] noto rounded-full text-white text-sm py-2 hover:bg-[#bf3902] bg-[#e65218]"
+            >
+              Go to events
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sm:p-6">
+      <p class="noto text-sm text-gray-800">Browse Category</p>
+      <p class="sm:text-2xl noto text-slate-900">Lagos</p>
+      <div class="flex my-3 items-center space-x-3">
+        <button
+          class="sm:w-[10em] rounded-full text-xs border-[.5px] border-gray-400 text-gray-700 py-2"
+        >
+          Change Location
+        </button>
+
+        <button
+          class="sm:w-[8.9em] rounded-full text-xs border-[.5px] border-gray-400 text-gray-700 py-2"
+        >
+          Filter by Date
+        </button>
+      </div>
+    </div>
+    <div class="">
+      <div class="sm:flex sm:py-[2.5em] flex-wrap justify-center items-center">
+        <!-- <div class="sm:w-[70%] border-2"></div> -->
+        <div
+          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+        >
+          <div
+            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+          >
+            Color Party
+          </div>
+        </div>
+
+        <div
+          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+        >
+          <div
+            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+          >
+            Line Dancing
+          </div>
+        </div>
+
+        <div
+          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+        >
+          <div
+            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+          >
+            Karaoke Fun
+          </div>
+        </div>
+
+        <div
+          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+        >
+          <div
+            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+          >
+            Fellas Only
+          </div>
+        </div>
+
+        <div
+          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+        >
+          <div
+            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+          >
+            Girls Only
+          </div>
+        </div>
+        <div
+          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+        >
+          <div
+            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+          >
+            Speed Dating
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include("partials/footer.ejs") -%>
+  </body>
+</html>

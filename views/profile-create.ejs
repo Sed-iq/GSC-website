@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="/public/images/GSC_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/public/styles/design.css" />
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grown&Sexy Club | Sign up</title>
+    <script src="/public/script/file-hander.js" defer></script>
+  </head>
+  <body class="h-screen reg-bg text-white flex flex-col justify-between">
+    <%- include("partials/mini_header.ejs") -%>
+    <div class="flex-1 flex justify-center items-center p-3">
+      <form
+        method="post"
+        action="/profile/create"
+        class="sm:w-[33em] backdrop-blur-xl flex flex-col items-center space-y-3 bg-[#b4b4b431] h-auto rounded-lg p-3"
+      >
+        <p class="text-center noto py-3 text-gray-200">Complete your profile</p>
+
+        <div class="w-full sm:h-[10em] flex justify-center items-center">
+          <input
+            id="file"
+            type="file"
+            accept=".png, .jpg, .jpeg"
+            name="file"
+            hidden
+          />
+          <div
+            class="w-full relative h-full justify-between items-center space-y-3 flex flex-col"
+          >
+            <div
+              class="w-full flex justify-center overflow-hidden items-center"
+            >
+              <img
+                id="profile-img"
+                alt=""
+                class="hidden rounded-full sm:w-[8em]"
+              />
+            </div>
+            <div
+              id="img-selector"
+              class="border-2 cursor-pointer sm:w-[7em] sm:h-[7em] flex items-center justify-center border-dotted rounded-full"
+            >
+              <i class="fa fa-camera text-xl"></i>
+            </div>
+            <p id="action-txt" class="text-xs noto">Add a Photo</p>
+            <button
+              id="change"
+              type="button"
+              class="w-[13em] hidden text-white text-xs rounded-full py-2 bg-[#a10ba1]"
+            >
+              Change image
+            </button>
+          </div>
+        </div>
+
+        <div class="flex w-full flex-col space-y-4 items-center">
+          <input
+            type="text"
+            class="text-sm focus:border-white duration-150 p-2 w-[95%] border-[.5px] border-[gray] bg-transparent rounded"
+            name="name"
+            placeholder="Full Name"
+          /><input
+            type="text"
+            class="text-sm focus:border-white duration-150 p-2 w-[95%] border-[.5px] border-[gray] bg-transparent rounded"
+            name="username"
+            placeholder="Username"
+          />
+          <select
+            type="text"
+            class="text-sm focus:border-white focus:text-white text-gray-400 outline-none duration-150 p-2 w-[95%] border-[.5px] border-[gray] bg-transparent rounded"
+            name="country"
+          >
+            <option value="" selected disabled>-Country-</option>
+            <option class="text-black" value="Nigeria">Nigeria</option>
+            <option class="text-black" value="United States">
+              United States
+            </option>
+            <option class="text-black" value="United Kingdom">
+              United Kingdom
+            </option>
+            <option class="text-black" value="Japan">Japan</option>
+            <option class="text-black" value="Mongolia">Monoglia</option>
+          </select>
+          <input
+            type="date"
+            class="text-sm focus:border-white duration-150 p-2 sm:w-[95%] border-[.5px] border-[gray] bg-transparent rounded"
+            name="date"
+            placeholder="Date"
+          />
+        </div>
+        <div class="w-[95%]">
+          <p id="warning" class="text-red-600 hidden text-xs"></p>
+        </div>
+        <button
+          type="submit"
+          class="noto bg-[#bf3902] text-sm rounded-full w-full py-2.5"
+        >
+          Save and Continue
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

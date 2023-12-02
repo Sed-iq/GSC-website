@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/public/images/GSC_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/public/styles/design.css" />
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <title>GSC | Process Subscription</title>
+  </head>
+  <body class="h-screen bg-[#eeeeee] flex flex-col">
+    <div class="p-3 flex justify-between items-center">
+      <div>
+        <a href="/">
+          <img src="/public/images/GSC_logo.png" class="sm:w-[30px]" />
+        </a>
+      </div>
+      <a href="/dashboard/events">
+        <button
+          class="w-[5em] py-[3px] border-[.5px] border-gray-700 rounded-full text-xs"
+        >
+          Back
+        </button>
+      </a>
+    </div>
+
+    <div class="center flex-col space-y-2">
+      <p class="sm:text-2xl text-gray-900 font-semibold">Upgrade to Pro</p>
+      <p class="sm:text-sm text-gray-800">
+        Select the plan that works best for you
+      </p>
+      <p
+        class="sm:text-xs noto sm:bg-[#fcd7c7] text-gray-700 sm:py-1.5 sm:px-2 rounded"
+      >
+        More fun, more activities, more events for you
+      </p>
+    </div>
+    <div class="sm:p-[2em] justify-center flex-1 flex">
+      <div class="sm:flex-grow-[.5] flex flex-col space-y-4 p-2">
+        <p class="text-xl noto text-gray-900">Gold plan</p>
+        <div
+          class="sm:w-[80%] rounded bg-white p-3 items-center flex justify-between"
+        >
+          <div class="flex items-center space-x-4">
+            <i class="fa text-gray-400 fa-check-circle"></i>
+            <p class="noto text-sm text-gray-800">Annually</p>
+            <span
+              class="px-2 py-1 rounded-full text-[10px] text-white bg-[#bf3902]"
+              >save 17%</span
+            >
+          </div>
+          <p class="text-gray-600 text-xs">$US 20.00/month</p>
+        </div>
+
+        <div
+          class="sm:w-[80%] rounded bg-white p-3 items-center flex justify-between"
+        >
+          <div class="flex items-center space-x-4">
+            <i class="fa text-gray-400 fa-check-circle"></i>
+            <p class="noto text-sm text-gray-800">Montly</p>
+          </div>
+          <p class="text-gray-600 text-xs">$US 24.00/month</p>
+        </div>
+      </div>
+      <div class="sm:flex-grow-[.485] p-2">
+        <div
+          class="p-3 py-[2em] bg-white flex flex-col space-y-3 rounded sm:w-[80%]"
+        >
+          <div
+            class="flex border-b-[.8px] pb-2 border-gray-300 w-full justify-between items-center"
+          >
+            <p class="text-gray-700 text-sm">Plus Plan</p>
+            <p class="text-gray-700 text-xs">$24.00</p>
+          </div>
+          <div class="w-full flex items-center justify-between">
+            <div class="flex flex-col items-start space-y-1">
+              <p class="font-semibold text-gray-900">Total</p>
+              <p class="text-sm text-gray-700">Billed every month</p>
+            </div>
+            <p class="text-sm font-semibold text-gray-900">US $24.00</p>
+          </div>
+          <a href="/subscription/payment" class="w-full">
+            <button
+              type="submit"
+              class="noto bg-[#bf3902] hover:shadow-lg duration-100 text-white text-sm rounded-full w-full py-2"
+            >
+              Continue with process
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

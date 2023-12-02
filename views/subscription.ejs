@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/public/images/GSC_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/public/styles/design.css" />
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <title>GSC | Subscribe to pro</title>
+  </head>
+  <body class="bg-[#f1f1f1]">
+    <div class="p-3 flex justify-between items-center">
+      <div>
+        <a href="/">
+          <img src="/public/images/GSC_logo.png" class="sm:w-[30px]" />
+        </a>
+      </div>
+      <a href="/dashboard/events">
+        <button
+          class="w-[5em] py-[3px] border-[.5px] border-gray-700 rounded-full text-xs"
+        >
+          Back
+        </button>
+      </a>
+    </div>
+    <div class="center flex-col space-y-2">
+      <p class="sm:text-2xl text-gray-900 font-semibold">Upgrade to Pro</p>
+      <p class="sm:text-sm text-gray-800">
+        Select the plan that works best for you
+      </p>
+      <p
+        class="sm:text-xs noto sm:bg-[#fcd7c7] text-gray-700 sm:py-1.5 sm:px-2 rounded"
+      >
+        More fun, more activities, more events for you
+      </p>
+      <% if(plan == "yearly") { %>
+
+      <div class="flex py-3 items-center space-x-1.5">
+        <p class="text-gray-800 font-semibold text-xs">Monthly</p>
+        <a href="/subscription?plan=monthly">
+          <div
+            id="toggle"
+            class="bg-[#bf3902] flex justify-end cursor-pointer p-1 rounded-full w-[3.8em] h-[1.9em]"
+          >
+            <div class="h-full bg-white w-[1.5em] rounded-full"></div>
+          </div>
+        </a>
+        <p class="text-gray-800 text-xs font-semibold">Yearly</p>
+      </div>
+      <% } %> <% if(plan != "yearly") { %>
+
+      <div class="flex py-3 items-center space-x-1.5">
+        <p class="text-gray-800 font-semibold text-xs">Monthly</p>
+        <a href="/subscription?plan=yearly">
+          <div
+            id="toggle"
+            class="bg-[#bf3902] flex cursor-pointer p-1 rounded-full w-[3.8em] h-[1.9em]"
+          >
+            <div class="h-full bg-white w-[1.5em] rounded-full"></div>
+          </div>
+        </a>
+        <p class="text-gray-800 text-xs font-semibold">Yearly</p>
+      </div>
+      <% } %>
+    </div>
+    <div
+      class="w-full sm:h-[30em] flex items-center justify-evenly sm:py-[3em]"
+    >
+      <div
+        id="subscription-card"
+        class="sm:h-[22em] center px-4 flex-col space-y-3 sm:w-[21.333%] duration-150 hover:border-[#bf3902] hover:shadow-md rounded-lg border-[0.5px] border-gray-300"
+      >
+        <div class="flex justify-between w-full items-center">
+          <p class="text-gray-800 text-xl">Silver</p>
+          <img
+            src="/public/images/solar_medal-ribbons-star-bold.png"
+            alt=""
+            class="sm:w-[1.876em]"
+          />
+        </div>
+        <div class="flex flex-col w-full sm:space-y-4">
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-gray-400 fa-check-circle"></i>
+            <p class="text-sm text-gray-400">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-gray-400 fa-check-circle"></i>
+            <p class="text-sm text-gray-400">Sliver Plan Boost</p>
+          </div>
+        </div>
+        <p class="text-2xl w-full noto text-gray-800">
+          $15.00<span class="text-gray-600 text-sm">/month</span>
+        </p>
+        <a class="w-full" href="/subscription/silver">
+          <button
+            class="border-[.5px] hover:bg-[#bf3902] duration-100 hover:border-transparent hover:text-white py-2 rounded-full w-[100%] text-sm border-[#bf3902] text-[#bf3902]"
+          >
+            Update Plan
+          </button>
+        </a>
+      </div>
+
+      <div
+        id="subscription-card"
+        class="sm:h-[22em] center px-4 flex-col space-y-3 sm:w-[21.333%] duration-150 hover:border-[#bf3902] hover:shadow-md rounded-lg border-[0.5px] border-gray-300"
+      >
+        <div class="flex justify-between w-full items-center">
+          <p class="text-gray-800 text-xl">Gold</p>
+          <img
+            src="/public/images/solar_medal-ribbons-star-bold (1).png"
+            alt=""
+            class="sm:w-[1.876em]"
+          />
+        </div>
+        <div class="flex flex-col w-full sm:space-y-4">
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <i class="fa text-gray-400 fa-check-circle"></i>
+            <p class="text-sm text-gray-400">Sliver Plan Boost</p>
+          </div>
+        </div>
+        <p class="text-2xl w-full noto text-gray-800">
+          $24.00<span class="text-gray-600 text-sm">/month</span>
+        </p>
+        <a class="w-full" href="/subscription/gold">
+          <button
+            class="border-[.5px] hover:bg-[#bf3902] duration-100 hover:border-transparent hover:text-white py-2 rounded-full w-[100%] text-sm border-[#bf3902] text-[#bf3902]"
+          >
+            Update Plan
+          </button>
+        </a>
+      </div>
+
+      <div
+        id="subscription-card"
+        class="sm:h-[22em] center px-4 flex-col space-y-3 sm:w-[21.333%] duration-150 hover:border-[#bf3902] hover:shadow-md rounded-lg border-[0.5px] border-gray-300"
+      >
+        <div class="flex justify-between w-full items-center">
+          <p class="text-gray-800 text-xl">Platinum</p>
+          <img
+            src="/public/images/solar_medal-ribbons-star-bold (2).png"
+            alt=""
+            class="sm:w-[1.876em]"
+          />
+        </div>
+        <div class="flex flex-col w-full sm:space-y-4">
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa text-[#bf3902] fa-check-circle"></i>
+            <p class="text-sm text-gray-800">Sliver Plan Boost</p>
+          </div>
+        </div>
+        <p class="text-2xl w-full noto text-gray-800">
+          $34.00<span class="text-gray-600 text-sm">/month</span>
+        </p>
+        <a class="w-full" href="/subscription/platinum">
+          <button
+            class="border-[.5px] hover:bg-[#bf3902] duration-100 hover:border-transparent hover:text-white py-2 rounded-full w-[100%] text-sm border-[#bf3902] text-[#bf3902]"
+          >
+            Update Plan
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col w-full sm:space-y-[4em]">
+      <div class="center text-center w-full">
+        <div class="center flex-col space-y-2 sm:w-[40%]">
+          <p class="text-gray-800 text-xl font-semibold">More Fun and Events</p>
+          <p class="text-gray-700 text-sm">
+            In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstrate the visual form of a document or a
+            typeface without relying on meaningful content. Lorem ipsum may be
+            used as a placeholder before final copy is available
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center sm:space-y-3">
+        <p class="text-gray-800 text-center text-2xl font-semibold">
+          Frequently Asked Questions
+        </p>
+        <div class="flex sm:w-[90%] justify-center items-center flex-wrap">
+          <div class="sm:w-[40%] flex flex-col sm:space-y-3 m-3 p-3">
+            <p class="text-gray-800 text-lg">Can i cancel anytime?</p>
+            <p class="text-gray-600 text-sm">
+              You can cancel your subscription at any time and it will not
+              auto-renew after the current paid term. Paid service will remain
+              active for the duration of the paid term. A cancelled trial and
+              associated services will stop immediately after cancellation,
+              except for any data packages that were purchased.
+            </p>
+          </div>
+          <div class="sm:w-[40%] flex flex-col sm:space-y-3 m-3 p-3">
+            <p class="text-gray-800 text-lg">What is your Refund Policy</p>
+            <p class="text-gray-600 text-sm">
+              There are no refunds for initial orders (i.e. first time
+              purchases) and there are no refunds for monthly plans. Refunds are
+              available only after an automatic deduction for annual payments
+              (i.e. after trial and after renewal) within 14 calendar days after
+              the payment was made.
+            </p>
+          </div>
+          <div class="sm:w-[40%] flex flex-col sm:space-y-3 m-3 p-3">
+            <p class="text-gray-800 text-lg">What is your Refund Policy</p>
+            <p class="text-gray-600 text-sm">
+              There are no refunds for initial orders (i.e. first time
+              purchases) and there are no refunds for monthly plans. Refunds are
+              available only after an automatic deduction for annual payments
+              (i.e. after trial and after renewal) within 14 calendar days after
+              the payment was made.
+            </p>
+          </div>
+          <div class="sm:w-[40%] flex flex-col sm:space-y-3 m-3 p-3">
+            <p class="text-gray-800 text-lg">Can i cancel anytime?</p>
+            <p class="text-gray-600 text-sm">
+              You can cancel your subscription at any time and it will not
+              auto-renew after the current paid term. Paid service will remain
+              active for the duration of the paid term. A cancelled trial and
+              associated services will stop immediately after cancellation,
+              except for any data packages that were purchased.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%-include("partials/footer")-%>
+    <!-- <div class="sm:h-[40em] center bg-[#bf3902] w-full">
+      <div
+        id="hero-section-dashboard"
+        class="sm:w-[80%] rounded-xl sm:h-[95%]"
+      ></div>
+    </div> -->
+  </body>
+</html>

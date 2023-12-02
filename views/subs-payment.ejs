@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/public/images/GSC_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/public/styles/design.css" />
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <title>GSC | Process Subscription</title>
+  </head>
+  <body class="h-screen bg-[#eeeeee] flex flex-col">
+    <div class="p-3 flex justify-between items-center">
+      <div>
+        <a href="/">
+          <img src="/public/images/GSC_logo.png" class="sm:w-[30px]" />
+        </a>
+      </div>
+      <a href="/dashboard/events">
+        <button
+          class="w-[5em] py-[3px] border-[.5px] border-gray-700 rounded-full text-xs"
+        >
+          Back
+        </button>
+      </a>
+    </div>
+
+    <div class="center flex-col space-y-2">
+      <p class="sm:text-2xl text-gray-900 font-semibold">Upgrade to Pro</p>
+      <p class="sm:text-sm text-gray-800">
+        Select the plan that works best for you
+      </p>
+      <p
+        class="sm:text-xs noto sm:bg-[#fcd7c7] text-gray-700 sm:py-1.5 sm:px-2 rounded"
+      >
+        More fun, more activities, more events for you
+      </p>
+    </div>
+    <div class="sm:p-[.5em] justify-evenly flex-1 flex">
+      <div class="flex sm:w-[50%] flex-col space-y-4 p-2">
+        <p class="text-xl text-gray-800 font-semibold">Payment Method</p>
+        <div class="w-full flex items-center sm:space-x-3">
+          <div
+            class="sm:px-3 sm:py-1 text-sm text-white rounded-full bg-[#bf3902]"
+          >
+            Credit Card
+          </div>
+          <div
+            class="sm:px-3 sm:py-1 text-sm text-gray-600 rounded-full bg-[white]"
+          >
+            Paypal
+          </div>
+        </div>
+
+        <div class="flex flex-col w-full space-y-4 p-2">
+          <div>
+            <p class="text-gray-800">Payment Details</p>
+            <p class="text-gray-600 text-xs">Bank Charges may be included</p>
+          </div>
+
+          <div class="w-full flex flex-col space-y-3">
+            <input
+              type="text"
+              placeholder="Card Number"
+              class="border-[.5px] w-full text-xs bg-transparent border-gray-500 rounded p-2.5"
+            />
+            <input
+              type="text"
+              placeholder="Card Holder Name"
+              class="border-[.5px] w-full text-xs bg-transparent border-gray-500 rounded p-2.5"
+            />
+            <div class="w-full flex items-center space-x-2">
+              <input
+                type="text"
+                placeholder="Expiration Date"
+                class="border-[.5px] flex-grow text-xs bg-transparent border-gray-500 rounded p-2.5"
+              />
+              <input
+                type="text"
+                placeholder="Security Code"
+                class="border-[.5px] flex-grow text-xs bg-transparent border-gray-500 rounded p-2.5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-full space-y-4 p-2">
+          <div>
+            <p class="text-gray-800">Address Details</p>
+          </div>
+
+          <div class="w-full flex flex-col space-y-3">
+            <select
+              type="text"
+              placeholder="Card Number"
+              class="border-[.5px] text-black w-full outline-none text-xs bg-transparent border-gray-500 rounded p-2.5"
+            >
+              <option value="ss" disabled selected>-Select Country-</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="cameroon">Cameroon</option>
+            </select>
+            <input
+              type="state"
+              placeholder="Card Holder Name"
+              class="border-[.5px] w-full text-xs bg-transparent border-gray-500 rounded p-2.5"
+            />
+            <input
+              type="city"
+              placeholder="Card Holder Name"
+              class="border-[.5px] w-full text-xs bg-transparent border-gray-500 rounded p-2.5"
+            />
+            <input
+              type="street"
+              placeholder="Card Holder Name"
+              class="border-[.5px] w-full text-xs bg-transparent border-gray-500 rounded p-2.5"
+            />
+            <input
+              type="Zip Code"
+              placeholder="Card Holder Name"
+              class="border-[.5px] w-full text-xs bg-transparent border-gray-500 rounded p-2.5"
+            />
+            <div class="flex space-x-2 items-center">
+              <input type="checkbox" class="" name="" id="" />
+              <p class="text-gray-700 text-xs">
+                i authorize Grown&sexy to charge me automatically until i cancel
+                my subscription. I have to read and agree to Grown&Sexy Term's
+                and Privacy Policy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sm:flex-grow-[.485] p-2">
+        <div
+          class="p-3 py-[2em] bg-white flex flex-col space-y-3 rounded-lg sm:w-[80%]"
+        >
+          <div
+            class="flex border-b-[.8px] pb-2 border-gray-300 w-full justify-between items-center"
+          >
+            <p class="text-gray-700 text-sm">Plus Plan</p>
+            <p class="text-gray-700 text-xs">$24.00</p>
+          </div>
+          <div class="w-full flex items-center justify-between">
+            <div class="flex flex-col items-start space-y-1">
+              <p class="font-semibold text-gray-900">Total</p>
+              <p class="text-sm text-gray-700">Billed every month</p>
+            </div>
+            <p class="text-sm font-semibold text-gray-900">US $24.00</p>
+          </div>
+          <a href="/subscription/checkout" class="w-full">
+            <button
+              type="submit"
+              class="noto bg-[#bf3902] hover:shadow-lg duration-100 text-white text-sm rounded-full w-full py-2"
+            >
+              Continue with process
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

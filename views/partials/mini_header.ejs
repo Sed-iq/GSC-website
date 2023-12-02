@@ -1,0 +1,36 @@
+<div class="p-3 flex noto bg-transparent justify-between">
+  <div>
+    <a href="/">
+      <img src="/public/images/GSC_logo.png" class="sm:w-[40px]" />
+    </a>
+  </div>
+  <div class="flex space-x-3 items-center">
+    <% if(url == "signin") { %>
+    <p class="text-sm noto">Don't have an account?</p>
+    <a href="/signup">
+      <button
+        class="w-[5em] py-2 border-[.5px] border-white rounded-full text-sm"
+      >
+        Signup
+      </button>
+    </a>
+    <% } %> <% if(url == "profile") { %>
+    <a href="/signup">
+      <button
+        class="w-[5em] py-2 border-[.5px] border-white rounded-full text-sm"
+      >
+        Signout
+      </button>
+    </a>
+    <% } %> <% if(url == null) { %>
+    <p class="text-sm noto">Already a user?</p>
+    <a href="/signin">
+      <button
+        class="w-[5em] py-2 border-[.5px] border-white rounded-full text-sm"
+      >
+        Signin
+      </button>
+    </a>
+    <% } %>
+  </div>
+</div>

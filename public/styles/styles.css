@@ -2,6 +2,16 @@
   background-image: url(/public/images/bg.png);
 }
 
+#hero-section-dashboard {
+  background: url(/public/images/Rectangle\ 8.jpg);
+}
+
+#hero-section-events {
+  background: url(/public/images/Rectangle\ 8.png);
+  background-size: cover;
+  background-position: center;
+}
+
 img {
   pointer-events: none;
 }
@@ -67,4 +77,34 @@ button,
 input,
 a {
   outline: none !important;
+}
+
+.reg-bg {
+  background-image: url(/public/images/reg-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.btn {
+  transition: 0.1s all linear;
+}
+.btn:hover {
+  transform: scale(1.01194345);
+  box-shadow: 8px 8px 10px rgba(129, 129, 129, 0.514);
+}
+
+#profile-img {
+  -webkit-clip-path: circle(35% at 50%);
+          clip-path: circle(35% at 50%);
+}
+
+#pfp {
+  -webkit-clip-path: circle(38% at 39%);
+          clip-path: circle(38% at 39%);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
