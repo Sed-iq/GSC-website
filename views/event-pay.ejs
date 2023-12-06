@@ -20,41 +20,17 @@
     />
     <link rel="stylesheet" href="/public/styles/design.css" />
     <link rel="stylesheet" href="/public/styles/styles.css" />
-    <title>GSC | Process Subscription</title>
+    <title>Grown&Sexy</title>
   </head>
-  <body class="h-screen bg-[#eeeeee] flex flex-col">
-    <div class="p-3 flex justify-between items-center">
-      <div>
-        <a href="/">
-          <img src="/public/images/GSC_logo.png" class="sm:w-[30px] w-[25px]" />
-        </a>
-      </div>
-      <a href="/dashboard/events">
-        <button
-          class="w-[5em] py-[3px] border-[.5px] border-gray-700 rounded-full text-xs"
-        >
-          Back
-        </button>
-      </a>
-    </div>
+  <body class="h-screen relative bg-[#eeeeee] flex flex-col">
+    <%- include("partials/dashboard-heading")-%>
 
-    <div class="center flex-col space-y-1 sm:space-y-2">
-      <p class="sm:text-2xl text-xl text-gray-900 font-semibold">
-        Upgrade to Pro
-      </p>
-      <p class="text-sm text-gray-800">
-        Select the plan that works best for you
-      </p>
-      <p class="text-xs noto bg-[#fcd7c7] text-gray-700 py-1.5 px-2 rounded">
-        More fun, more activities, more events for you
-      </p>
-    </div>
     <form
-      class="sm:p-[.5em] py-[2em] px-2 justify-evenly sm:flex-1 sm:flex-row flex-col flex"
+      class="sm:p-[2em] justify-center flex-1 sm:flex-row flex-col-reverse flex"
     >
-      <div class="flex sm:w-[50%] flex-col space-y-4 p-2">
+      <div class="flex sm:w-[50%] sm:p-2 px-[1.6em] flex-col space-y-4 p-2">
         <p class="text-xl text-gray-800 font-semibold">Payment Method</p>
-        <div class="w-full flex items-center space-x-3">
+        <div class="w-full flex items-center space-x-2 sm:space-x-3">
           <div class="px-3 py-1 text-sm text-white rounded-full bg-[#bf3902]">
             Credit Card
           </div>
@@ -138,32 +114,69 @@
                 and Privacy Policy.
               </p>
             </div>
+            <button
+              type="submit"
+              class="noto sm:hidden bg-[#bf3902] hover:shadow-lg duration-100 text-white text-sm rounded-full w-full py-2"
+            >
+              Place Order
+            </button>
           </div>
         </div>
       </div>
 
-      <div class="sm:flex-grow-[.485] p-2">
+      <div
+        class="sm:flex-grow-[.485] flex items-start justify-center sm:w-[50%] p-2"
+      >
         <div
-          class="p-3 py-[2em] bg-white flex flex-col space-y-3 rounded-lg sm:w-[80%]"
+          class="sm:px-[1.2em] overflow-hidden sm:py-[1.3em] sm:shadow-md sm:bg-white flex flex-col space-y-2 rounded-xl sm:w-[70%]"
         >
-          <div
-            class="flex border-b-[.8px] pb-2 border-gray-300 w-full justify-between items-center"
-          >
-            <p class="text-gray-700 text-sm">Plus Plan</p>
-            <p class="text-gray-700 text-xs">$24.00</p>
+          <div class="w-full flex justify-center">
+            <img
+              src="/public/images/latest_event1.png"
+              alt=""
+              class="sm:w-[23em]"
+            />
           </div>
-          <div class="w-full flex items-center justify-between">
-            <div class="flex flex-col items-start space-y-1">
-              <p class="font-semibold text-gray-900">Total</p>
-              <p class="text-sm text-gray-700">Billed every month</p>
+          <p class="text-gray-800 text-xl font-semibold">Singles Night Out</p>
+          <p class="text-gray-700 text-sm">Sun Dec 10 at 7:00pm</p>
+          <p class="text-gray-700 text-sm">Old Carolina</p>
+          <div class="flex sm:first-line:py-3 justify-between items-center">
+            <p class="text-sm text-gray-800 font-semibold">Tickets</p>
+            <div class="flex items-center space-x-3">
+              <i
+                class="fa text-lg cursor-pointer text-gray-400 fa-minus-square"
+              ></i>
+              <p class="text-xs">1</p>
+              <i
+                class="fa text-lg cursor-pointer text-blue-700 fa-plus-square"
+              ></i>
             </div>
-            <p class="text-sm font-semibold text-gray-900">US $24.00</p>
+          </div>
+          <div class="flex sm:first-line:py-3 justify-between items-center">
+            <p class="text-sm text-gray-800">Price</p>
+            <p class="text-sm noto font-semibold">$250</p>
+          </div>
+          <div
+            class="p-2 rounded-lg flex flex-col space-y-2 bg-[#bf3902] text-white"
+          >
+            <div class="flex justify-between items-center">
+              <p class="text-sm">Discount Price</p>
+              <p class="noto text-sm font-medium">$180</p>
+            </div>
+            <p class="text-xs underline">
+              Upgrade to Pro to enjoy discount prices
+            </p>
+          </div>
+
+          <div class="sm:py-[1em] flex justify-between items-center">
+            <p class="font-semibold">Total</p>
+            <p class="font-semibold noto">$250</p>
           </div>
           <button
             type="submit"
-            class="noto bg-[#bf3902] hover:shadow-lg duration-100 text-white text-sm rounded-full w-full py-2"
+            class="noto sm:block hidden bg-[#bf3902] hover:shadow-lg duration-100 text-white text-sm rounded-full w-full py-2"
           >
-            Continue with process
+            Place Order
           </button>
         </div>
       </div>

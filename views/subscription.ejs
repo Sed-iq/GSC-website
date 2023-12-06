@@ -26,7 +26,7 @@
     <div class="p-3 flex justify-between items-center">
       <div>
         <a href="/">
-          <img src="/public/images/GSC_logo.png" class="sm:w-[30px]" />
+          <img src="/public/images/GSC_logo.png" class="sm:w-[30px] w-[24px]" />
         </a>
       </div>
       <a href="/dashboard/events">
@@ -37,13 +37,15 @@
         </button>
       </a>
     </div>
-    <div class="center flex-col space-y-2">
-      <p class="sm:text-2xl text-gray-900 font-semibold">Upgrade to Pro</p>
-      <p class="sm:text-sm text-gray-800">
+    <div class="center flex-col sm:space-y-2">
+      <p class="sm:text-2xl text-gray-900 sm:m-0 mb-2 font-semibold">
+        Upgrade to Pro
+      </p>
+      <p class="text-sm text-gray-800">
         Select the plan that works best for you
       </p>
       <p
-        class="sm:text-xs noto sm:bg-[#fcd7c7] text-gray-700 sm:py-1.5 sm:px-2 rounded"
+        class="text-xs noto sm:bg-[#fcd7c7] text-gray-700 sm:py-1.5 sm:px-2 rounded"
       >
         More fun, more activities, more events for you
       </p>
@@ -78,18 +80,18 @@
       <% } %>
     </div>
     <div
-      class="w-full sm:h-[30em] flex items-center justify-evenly sm:py-[3em]"
+      class="w-full sm:h-[30em] sm:p-0 p-5 py-[2em] flex sm:flex-row flex-col sm:space-y-0 space-y-4 sm:shadow-none items-center sm:justify-evenly sm:py-[3em]"
     >
       <div
         id="subscription-card"
-        class="sm:h-[22em] center px-4 flex-col space-y-3 sm:w-[21.333%] duration-150 hover:border-[#bf3902] hover:shadow-md rounded-lg border-[0.5px] border-gray-300"
+        class="sm:h-[22em] center sm:py-0 py-4 w-[90%] px-4 flex-col space-y-3 sm:w-[21.333%] duration-150 hover:border-[#bf3902] hover:shadow-md rounded-lg border-[0.5px] border-gray-300"
       >
         <div class="flex justify-between w-full items-center">
           <p class="text-gray-800 text-xl">Silver</p>
           <img
             src="/public/images/solar_medal-ribbons-star-bold.png"
             alt=""
-            class="sm:w-[1.876em]"
+            class="sm:w-[1.876em] w-[30px]"
           />
         </div>
         <div class="flex flex-col w-full sm:space-y-4">
@@ -128,14 +130,14 @@
 
       <div
         id="subscription-card"
-        class="sm:h-[22em] center px-4 flex-col space-y-3 sm:w-[21.333%] duration-150 hover:border-[#bf3902] hover:shadow-md rounded-lg border-[0.5px] border-gray-300"
+        class="sm:h-[22em] center sm:py-0 py-4 w-[90%] px-4 flex-col space-y-3 sm:w-[21.333%] duration-150 hover:border-[#bf3902] hover:shadow-md rounded-lg border-[0.5px] border-gray-300"
       >
         <div class="flex justify-between w-full items-center">
           <p class="text-gray-800 text-xl">Gold</p>
           <img
             src="/public/images/solar_medal-ribbons-star-bold (1).png"
             alt=""
-            class="sm:w-[1.876em]"
+            class="sm:w-[1.876em] w-[30px]"
           />
         </div>
         <div class="flex flex-col w-full sm:space-y-4">
@@ -175,14 +177,14 @@
 
       <div
         id="subscription-card"
-        class="sm:h-[22em] center px-4 flex-col space-y-3 sm:w-[21.333%] duration-150 hover:border-[#bf3902] hover:shadow-md rounded-lg border-[0.5px] border-gray-300"
+        class="sm:h-[22em] center sm:py-0 py-4 w-[90%] px-4 flex-col space-y-3 sm:w-[21.333%] duration-150 hover:border-[#bf3902] hover:shadow-md rounded-lg border-[0.5px] border-gray-300"
       >
         <div class="flex justify-between w-full items-center">
           <p class="text-gray-800 text-xl">Platinum</p>
           <img
             src="/public/images/solar_medal-ribbons-star-bold (2).png"
             alt=""
-            class="sm:w-[1.876em]"
+            class="sm:w-[1.876em] w-[30px]"
           />
         </div>
         <div class="flex flex-col w-full sm:space-y-4">
@@ -219,11 +221,11 @@
         </a>
       </div>
     </div>
-    <div class="flex flex-col w-full sm:space-y-[4em]">
+    <div class="flex flex-col w-full space-y-3 sm:space-y-[4em]">
       <div class="center text-center w-full">
         <div class="center flex-col space-y-2 sm:w-[40%]">
           <p class="text-gray-800 text-xl font-semibold">More Fun and Events</p>
-          <p class="text-gray-700 text-sm">
+          <p class="text-gray-700 sm:p-0 px-3 text-sm">
             In publishing and graphic design, Lorem ipsum is a placeholder text
             commonly used to demonstrate the visual form of a document or a
             typeface without relying on meaningful content. Lorem ipsum may be
@@ -236,7 +238,7 @@
           Frequently Asked Questions
         </p>
         <div class="flex sm:w-[90%] justify-center items-center flex-wrap">
-          <div class="sm:w-[40%] flex flex-col sm:space-y-3 m-3 p-3">
+          <div class="sm:w-[40%] flex flex-col space-y-2 sm:space-y-3 m-3 p-3">
             <p class="text-gray-800 text-lg">Can i cancel anytime?</p>
             <p class="text-gray-600 text-sm">
               You can cancel your subscription at any time and it will not
@@ -246,7 +248,7 @@
               except for any data packages that were purchased.
             </p>
           </div>
-          <div class="sm:w-[40%] flex flex-col sm:space-y-3 m-3 p-3">
+          <div class="sm:w-[40%] flex flex-col space-y-2 sm:space-y-3 m-3 p-3">
             <p class="text-gray-800 text-lg">What is your Refund Policy</p>
             <p class="text-gray-600 text-sm">
               There are no refunds for initial orders (i.e. first time
@@ -256,7 +258,7 @@
               the payment was made.
             </p>
           </div>
-          <div class="sm:w-[40%] flex flex-col sm:space-y-3 m-3 p-3">
+          <div class="sm:w-[40%] flex flex-col space-y-2 sm:space-y-3 m-3 p-3">
             <p class="text-gray-800 text-lg">What is your Refund Policy</p>
             <p class="text-gray-600 text-sm">
               There are no refunds for initial orders (i.e. first time
@@ -266,7 +268,7 @@
               the payment was made.
             </p>
           </div>
-          <div class="sm:w-[40%] flex flex-col sm:space-y-3 m-3 p-3">
+          <div class="sm:w-[40%] flex flex-col space-y-2 sm:space-y-3 m-3 p-3">
             <p class="text-gray-800 text-lg">Can i cancel anytime?</p>
             <p class="text-gray-600 text-sm">
               You can cancel your subscription at any time and it will not
@@ -280,11 +282,5 @@
       </div>
     </div>
     <%-include("partials/footer")-%>
-    <!-- <div class="sm:h-[40em] center bg-[#bf3902] w-full">
-      <div
-        id="hero-section-dashboard"
-        class="sm:w-[80%] rounded-xl sm:h-[95%]"
-      ></div>
-    </div> -->
   </body>
 </html>

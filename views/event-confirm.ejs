@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/public/images/GSC_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/public/styles/design.css" />
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <script src="/public/script/event-modal.js" defer></script>
+    <title>Grown&Sexy</title>
+  </head>
+  <body class="h-screen relative bg-[#eeeeee] flex flex-col">
+    <%- include("partials/dashboard-heading")-%>
+    <div
+      id="modal"
+      class="z-10 fixed hidden items-center justify-center w-full h-full bg-[#7474746b] backdrop-blur-md"
+    >
+      <!-- Modal -->
+      <div
+        id="modal-under"
+        class="bg-white sm:p-0 p-5 flex flex-col space-y-3 rounded-xl sm:py-[1em] sm:px-[2em]"
+      >
+        <p class="text-lg text-gray-800 font-semibold">Confirm deliver email</p>
+        <p class="text-sm text-gray-600">
+          Your tickets will be delivered to the email address below.
+        </p>
+        <input
+          type="email"
+          placeholder="Email Address"
+          class="border-[.5px] sm:w-full text-xs bg-transparent border-gray-500 rounded p-2"
+        />
+        <a href="/dashboard/pay" class="w-full">
+          <button
+            type="submit"
+            class="noto bg-[#bf3902] hover:shadow-lg duration-100 w-full text-white text-sm rounded-full py-2"
+          >
+            Continue
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      class="sm:p-[2em] justify-center p-3 sm:-space-y-0 -space-y-3 flex-1 sm:flex-row flex-col-reverse flex"
+    >
+      <div
+        class="sm:flex-grow-[.5] sm:w-[50%] flex flex-col space-y-2.5 sm:space-y-4 p-2"
+      >
+        <p class="text-xl noto text-gray-900">
+          Where should we send your tickets?
+        </p>
+        <p class="text-sm text-gray-800">
+          Ticket will be delivered to the email address provided below.
+        </p>
+        <input
+          type="email"
+          placeholder="Email Address"
+          class="border-[.5px] sm:w-[80%] text-xs bg-transparent border-gray-500 rounded p-2.5"
+        />
+        <input
+          type="text"
+          placeholder="Mobile Number"
+          class="border-[.5px] sm:w-[80%] text-xs bg-transparent border-gray-500 rounded p-2.5"
+        />
+
+        <button
+          type="submit"
+          onclick="callModal()"
+          class="noto bg-[#bf3902] hover:shadow-lg duration-100 text-white text-sm rounded-full sm:w-[80%] py-2"
+        >
+          Continue to billing
+        </button>
+      </div>
+      <div
+        class="sm:flex-grow-[.485] flex items-start justify-center sm:w-[50%] p-2"
+      >
+        <div
+          class="sm:px-[1.2em] w-[90%] overflow-hidden sm:py-[1.3em] sm:shadow-md sm:bg-white flex flex-col space-y-2 rounded-xl sm:w-[70%]"
+        >
+          <div class="w-full flex justify-center">
+            <img
+              src="/public/images/latest_event1.png"
+              alt=""
+              class="sm:w-[23em]"
+            />
+          </div>
+          <p class="text-gray-800 text-xl font-semibold">Singles Night Out</p>
+          <p class="text-gray-700 text-sm">Sun Dec 10 at 7:00pm</p>
+          <p class="text-gray-700 text-sm">Old Carolina</p>
+          <div class="flex sm:first-line:py-3 justify-between items-center">
+            <p class="text-sm text-gray-800 font-semibold">Tickets</p>
+            <div class="flex items-center space-x-3">
+              <i
+                class="fa text-lg cursor-pointer text-gray-400 fa-minus-square"
+              ></i>
+              <p class="text-xs">1</p>
+              <i
+                class="fa text-lg cursor-pointer text-blue-700 fa-plus-square"
+              ></i>
+            </div>
+          </div>
+          <div class="flex sm:first-line:py-3 justify-between items-center">
+            <p class="text-sm text-gray-800">Price</p>
+            <p class="text-sm noto font-semibold">$250</p>
+          </div>
+          <div
+            class="p-2 rounded-lg flex flex-col space-y-2 bg-[#bf3902] text-white"
+          >
+            <div class="flex justify-between items-center">
+              <p class="text-sm">Discount Price</p>
+              <p class="noto text-sm font-medium">$180</p>
+            </div>
+            <p class="text-xs underline">
+              Upgrade to Pro to enjoy discount prices
+            </p>
+          </div>
+
+          <div class="sm:py-[1em] flex justify-between items-center">
+            <p class="font-semibold">Total</p>
+            <p class="font-semibold noto">$250</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

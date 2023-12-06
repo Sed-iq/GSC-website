@@ -21,27 +21,33 @@
   <body class="h-screen reg-bg text-white flex flex-col justify-between">
     <%- include("partials/mini_header.ejs") -%>
     <div class="flex-1 flex justify-center items-center p-3">
-      <div
+      <form
+        method="post"
+        action="/signin"
         class="sm:w-[33em] backdrop-blur-xl flex flex-col items-center space-y-3 bg-[#b4b4b431] h-auto rounded-lg p-3"
       >
         <p class="text-center noto py-3 text-gray-200">Sign in</p>
         <div class="flex w-full flex-col space-y-4 items-center">
+          <div class="w-[95%]">
+            <p id="warning" class="text-red-600"><%=error%></p>
+          </div>
           <input
             type="email"
             class="text-sm focus:border-white duration-150 p-2 w-[95%] border-[.5px] border-[gray] bg-transparent rounded"
             name="email"
             placeholder="Email Address"
           /><input
-            type="email"
+            type="password"
             class="text-sm focus:border-white duration-150 p-2 w-[95%] border-[.5px] border-[gray] bg-transparent rounded"
             name="password"
             placeholder="Password"
           />
         </div>
-        <div class="w-[95%]">
-          <p id="warning" class="text-red-600 hidden text-xs"></p>
-        </div>
-        <button class="noto bg-[#bf3902] text-sm rounded-full w-full py-2.5">
+
+        <button
+          type="submit"
+          class="noto bg-[#bf3902] text-sm rounded-full w-full py-2.5"
+        >
           Sign in
         </button>
         <fieldset class="w-full border-gray-500 border-t-[.5px]">
@@ -60,9 +66,9 @@
         <p class="sm:w-[90%] py-7 text-center text-xs noto">
           By Signing up, you agree to our
           <span class="font-semibold">Terms and Privacy Policy</span> Users that
-          violate out terms will be kicked out
+          violate our terms will be kicked out
         </p>
-      </div>
+      </form>
     </div>
   </body>
 </html>

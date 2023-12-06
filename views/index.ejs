@@ -27,51 +27,59 @@
     <%- include("partials/header.ejs")-%>
     <div
       id="hero-section"
-      class="sm:h-[40em] sm:bg-cover sm:pb-[5.6em] flex justify-center items-end bg-black"
+      class="sm:h-[40em] h-[30em] sm:bg-cover justify-center items-center sm:pb-[5.6em] flex sm:justify-center sm:items-end bg-black"
     >
-      <div class="flex flex-col sm:space-y-[1.3em]">
+      <div class="flex flex-col space-y-[1.3em]">
         <p class="sm:text-3xl text-base noto text-center text-white">
-          Fun, and Dating and Connection <br />
+          Fun, Dating and Connection <br />
           All in One Place
         </p>
         <div class="justify-center flex">
           <button
             onclick="location='/signup'"
-            class="rounded-full sm:px-6 duration-150 sm:py-3 noto hover:bg-[#e66e3e] text-white text-sm bg-[#bf3902]"
+            class="rounded-full sm:px-6 p-3 duration-150 sm:py-3 noto hover:bg-[#e66e3e] text-white text-sm bg-[#bf3902]"
           >
             Join now
           </button>
         </div>
       </div>
     </div>
-    <div class="sm:py-[4em]">
+    <div class="sm:py-[4em] pt-[2em]">
       <!-- Mission section -->
-      <p class="sm:text-2xl text-center noto text-[#bf3902]">
+      <p class="sm:text-2xl text-xl text-center noto text-[#bf3902]">
         Why Gown and Sexy Club ?
       </p>
-      <div class="flex flex-col items-center my-3 sm:space-y-[3.4em]">
-        <div class="sm:flex w-[70%] justify-between">
-          <img src="/public/images/one.svg" alt="image" class="sm:w-[140px]" />
+      <div
+        class="flex flex-col sm:p-0 py-[2em] items-center my-3 space-y-6 sm:space-y-[3.4em]"
+      >
+        <div class="flex justify-center w-[70%] sm:justify-between">
+          <img
+            src="/public/images/one.svg"
+            alt="image"
+            class="sm:w-[140px] w-[120px]"
+          />
         </div>
 
         <div class="sm:flex w-[70%] sm:space-x-4 justify-between">
           <div class="flex items-center justify-end">
-            <p class="sm:w-[60%] font-extralight noto text-sm">
+            <p class="sm:w-[60%] sm:text-start text-center noto text-sm">
               Our mission is to provide our customers with the best possible
               event planning experience. We want to make it easy for you to find
               the perfect event for your needs and to plan the prefect party.
             </p>
           </div>
-          <img
-            src="/public/images/two.svg"
-            alt="image"
-            class="sm:w-[140px] sm:-translate-y-[4em]"
-          />
+          <div class="sm:p-0 py-[2em] sm:block flex justify-center">
+            <img
+              src="/public/images/two.svg"
+              alt="image"
+              class="sm:w-[140px] w-[120px] sm:-translate-y-[4em]"
+            />
+          </div>
         </div>
 
         <div class="sm:flex w-[70%] justify-between">
           <div class="flex items-center justify-end">
-            <p class="sm:w-[45%] font-extralight noto text-sm">
+            <p class="sm:w-[45%] noto text-sm">
               We are your one-stop shop for all things events and parties. We
               have a wide variety of events to choose from, including concerts,
               festivals, parties, and more. We also offer a variety of services
@@ -85,28 +93,34 @@
           <img
             src="/public/images/three.svg"
             alt="image"
-            class="sm:w-[140px]"
+            class="sm:w-[140px] sm:block hidden"
           />
           <div class="sm:flex sm:space-x-4">
             <img
               src="/public/images/four.svg"
               alt="image"
-              class="sm:w-[140px]"
+              class="sm:w-[140px] sm:block hidden"
             />
             <img
               src="/public/images/five.svg"
               alt="image"
-              class="sm:w-[140px]"
+              class="sm:w-[140px] sm:block hidden"
             />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="sm:py-10 z-30 translate-y-[4em] flex flex-col sm:space-y-6">
+    <div
+      class="sm:py-10 z-30 sm:translate-y-[4em] hidden sm:flex flex-col space-y-6 sm:space-y-6"
+    >
       <!-- Gallery Section -->
-      <p class="sm:text-2xl text-center noto text-[#bf3902]">Our Gallery</p>
-      <div class="sm:flex sm:justify-between">
+      <p class="sm:text-2xl text-xl text-center noto text-[#bf3902]">
+        Our Gallery
+      </p>
+      <div
+        class="sm:flex flex flex-col sm:flex-row sm:space-y-0 space-y-5 sm:justify-between"
+      >
         <img
           src="/public/images/gallery1.png"
           alt=""
@@ -134,78 +148,80 @@
       <img
         src="/public/images/solar_ticket-bold-1.png"
         alt=""
-        class="w-[100px] absolute sm:top-[2.3em] right-0"
+        class="w-[100px] absolute top-0 sm:top-[2.3em] right-0"
       />
+
       <img
         src="/public/images/solar_ticket-bold.png"
         alt=""
-        class="w-[100px] sm:bottom-0 left-0 absolute"
+        class="w-[100px] bottom-0 left-0 absolute"
       />
       <div class="sm:pt-[8em] flex justify-center">
         <%- include("partials/gallery_card.ejs") -%>
       </div>
     </div>
-    <div class="sm:py-[5em]">
+    <div class="sm:py-[5em] py-6 sm:block flex flex-col space-y-6">
       <!-- Event Categories -->
-      <p class="sm:text-2xl text-center noto text-[#bf3902]">
+      <p class="sm:text-2xl text-xl text-center noto text-[#bf3902]">
         Event Categories
       </p>
-      <div class="sm:flex sm:py-[2.5em] flex-wrap justify-center items-center">
-        <!-- <div class="sm:w-[70%] border-2"></div> -->
+      <div
+        class="sm:flex sm:p-0 px-4 sm:flex-row flex-col sm:space-y-0 space-y-4 sm:py-[2.5em] flex-wrap sm:justify-center items-center"
+      >
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Color Party
           </div>
         </div>
 
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Line Dancing
           </div>
         </div>
 
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Karaoke Fun
           </div>
         </div>
 
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Fellas Only
           </div>
         </div>
 
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Girls Only
           </div>
         </div>
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Speed Dating
           </div>
@@ -213,99 +229,125 @@
       </div>
     </div>
 
-    <div class="sm:py-[2em]">
-      <p class="sm:text-2xl text-center noto text-[#bf3902]">Latest Events</p>
+    <div class="sm:py-[2em] sm:block flex flex-col space-y-5 py-7">
+      <p class="sm:text-2xl text-xl text-center noto text-[#bf3902]">
+        Latest Events
+      </p>
       <div
-        class="sm:flex sm:py-[2.5em] flex-wrap sm:space-y-4 justify-center items-center"
+        class="sm:flex sm:flex-row sm:p-0 px-6 flex flex-col space-y-5 sm:py-[2.5em] flex-wrap sm:space-y-4 justify-center items-center"
       >
         <!-- <div class="sm:w-[70%] border-2"></div> -->
-        <div class="sm:w-[28%] sm:flex sm:flex-col sm:space-y-3">
+        <div class="sm:w-[28%] w-full flex flex-col space-y-2.5 sm:space-y-3">
           <div
             style="background-image: url(/public/images/latest_event1.png)"
-            class="sm:w-[90%] latest-event flex items-end sm:h-[14.5em] bg-blue-500 text-white m-2 rounded-xl"
+            class="sm:w-[90%] latest-event flex items-end h-[16em] sm:h-[14.5em] bg-blue-500 text-white sm:m-2 rounded-xl"
           ></div>
-          <div class="sm:flex sm:flex-col sm:space-y-1 sm:pl-3">
+          <div
+            class="flex sm:items-start items-center flex-col sm:space-y-1 sm:pl-3"
+          >
             <p class="noto font-semibold">Singles Night Out</p>
             <p class="text-sm text-gray-700">Nov 5 - Old Caroline</p>
-            <p class="noto text-sm">From $300.00</p>
+            <p class="noto sm:font-normal font-semibold sm:text-sm">
+              From $300.00
+            </p>
           </div>
         </div>
-        <div class="sm:w-[28%] sm:flex sm:flex-col sm:space-y-3">
+        <div class="sm:w-[28%] w-full flex flex-col space-y-2.5 sm:space-y-3">
           <div
             style="background-image: url(/public/images/latest_event2.png)"
-            class="sm:w-[90%] latest-event flex items-end sm:h-[14.5em] bg-blue-500 text-white m-2 rounded-xl"
+            class="sm:w-[90%] latest-event flex items-end h-[16em] sm:h-[14.5em] bg-blue-500 text-white sm:m-2 rounded-xl"
           ></div>
-          <div class="sm:flex sm:flex-col sm:space-y-1 sm:pl-3">
+          <div
+            class="flex sm:items-start items-center flex-col sm:space-y-1 sm:pl-3"
+          >
             <p class="noto font-semibold">Singles Night Out</p>
             <p class="text-sm text-gray-700">Nov 5 - Old Caroline</p>
-            <p class="noto text-sm">From $300.00</p>
+            <p class="noto sm:font-normal font-semibold sm:text-sm">
+              From $300.00
+            </p>
           </div>
         </div>
-        <div class="sm:w-[28%] sm:flex sm:flex-col sm:space-y-3">
+        <div class="sm:w-[28%] w-full flex flex-col space-y-2.5 sm:space-y-3">
           <div
             style="background-image: url(/public/images/latest_event3.png)"
-            class="sm:w-[90%] latest-event flex items-end sm:h-[14.5em] bg-blue-500 text-white m-2 rounded-xl"
+            class="sm:w-[90%] latest-event flex items-end h-[16em] sm:h-[14.5em] bg-blue-500 text-white sm:m-2 rounded-xl"
           ></div>
-          <div class="sm:flex sm:flex-col sm:space-y-1 sm:pl-3">
+          <div
+            class="flex sm:items-start items-center flex-col sm:space-y-1 sm:pl-3"
+          >
             <p class="noto font-semibold">Singles Night Out</p>
             <p class="text-sm text-gray-700">Nov 5 - Old Caroline</p>
-            <p class="noto text-sm">From $300.00</p>
+            <p class="noto sm:font-normal font-semibold sm:text-sm">
+              From $300.00
+            </p>
           </div>
         </div>
-        <div class="sm:w-[28%] sm:flex sm:flex-col sm:space-y-3">
+        <div class="sm:w-[28%] w-full flex flex-col space-y-2.5 sm:space-y-3">
           <div
             style="background-image: url(/public/images/latest_event2.png)"
-            class="sm:w-[90%] latest-event flex items-end sm:h-[14.5em] bg-blue-500 text-white m-2 rounded-xl"
+            class="sm:w-[90%] latest-event flex items-end h-[16em] sm:h-[14.5em] bg-blue-500 text-white sm:m-2 rounded-xl"
           ></div>
-          <div class="sm:flex sm:flex-col sm:space-y-1 sm:pl-3">
+          <div
+            class="flex sm:items-start items-center flex-col sm:space-y-1 sm:pl-3"
+          >
             <p class="noto font-semibold">Singles Night Out</p>
             <p class="text-sm text-gray-700">Nov 5 - Old Caroline</p>
-            <p class="noto text-sm">From $300.00</p>
+            <p class="noto sm:font-normal font-semibold sm:text-sm">
+              From $300.00
+            </p>
           </div>
         </div>
-        <div class="sm:w-[28%] sm:flex sm:flex-col sm:space-y-3">
+        <div class="sm:w-[28%] w-full flex flex-col space-y-2.5 sm:space-y-3">
           <div
             style="background-image: url(/public/images/latest_event3.png)"
-            class="sm:w-[90%] latest-event flex items-end sm:h-[14.5em] bg-blue-500 text-white m-2 rounded-xl"
+            class="sm:w-[90%] latest-event flex items-end h-[16em] sm:h-[14.5em] bg-blue-500 text-white sm:m-2 rounded-xl"
           ></div>
-          <div class="sm:flex sm:flex-col sm:space-y-1 sm:pl-3">
+          <div
+            class="flex sm:items-start items-center flex-col sm:space-y-1 sm:pl-3"
+          >
             <p class="noto font-semibold">Singles Night Out</p>
             <p class="text-sm text-gray-700">Nov 5 - Old Caroline</p>
-            <p class="noto text-sm">From $300.00</p>
+            <p class="noto sm:font-normal font-semibold sm:text-sm">
+              From $300.00
+            </p>
           </div>
         </div>
-        <div class="sm:w-[28%] sm:flex sm:flex-col sm:space-y-3">
+        <div class="sm:w-[28%] w-full flex flex-col space-y-2.5 sm:space-y-3">
           <div
             style="background-image: url(/public/images/latest_event1.png)"
-            class="sm:w-[90%] latest-event flex items-end sm:h-[14.5em] bg-blue-500 text-white m-2 rounded-xl"
+            class="sm:w-[90%] latest-event flex items-end h-[16em] sm:h-[14.5em] bg-blue-500 text-white sm:m-2 rounded-xl"
           ></div>
-          <div class="sm:flex sm:flex-col sm:space-y-1 sm:pl-3">
+          <div
+            class="flex sm:items-start items-center flex-col sm:space-y-1 sm:pl-3"
+          >
             <p class="noto font-semibold">Singles Night Out</p>
             <p class="text-sm text-gray-700">Nov 5 - Old Caroline</p>
-            <p class="noto text-sm">From $300.00</p>
+            <p class="noto sm:font-normal font-semibold sm:text-sm">
+              From $300.00
+            </p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Members subscription -->
-    <div class="sm:w-full flex pb-[4em] justify-center">
+    <div class="sm:w-full sm:p-0 px-5 pb-6 flex sm:pb-[4em] justify-center">
       <div
         id="membership-card"
-        class="sm:w-[80%] sm:flex sm:items-end rounded-xl sm:h-[30em]"
+        class="sm:w-[80%] flex items-end rounded-xl h-[19em] sm:h-[30em]"
       >
         <div
-          class="sm:flex sm:p-[5em] sm:w-[35em] sm:flex-col noto text-white sm:space-y-5"
+          class="flex sm:p-[5em] p-[1.5em] sm:w-[35em] flex-col noto text-white sm:space-y-5"
         >
           <p class="sm:text-2xl font-semibold">Members Subscription</p>
           <p>
             Subscribed members enjoy more event listings, massive discount on
             every event amd many more!
           </p>
-          <div>
+          <div class="sm:p-0 py-4">
             <button
               onclick="location='/subscription'"
-              class="sm:px-[2em] noto px-3 py-2 rounded-full duration-150 hover:bg-[#bf3902] text-xs text-white bg-[#af3200]"
+              class="sm:px-[2em] noto sm:w-auto w-[8em] py-2 rounded-full duration-150 hover:bg-[#bf3902] text-xs text-white bg-[#af3200]"
             >
               Explore
             </button>
@@ -321,16 +363,18 @@
         background-size: cover;
         background-position: center;
       "
-      class="sm:h-[30em] sm:flex sm:justify-center sm:items-center w-full bg-black"
+      class="sm:h-[30em] h-[20em] flex justify-center items-center w-full bg-black"
     >
-      <div class="sm:w-[30%] text-center text-white flex flex-col space-y-4">
-        <p class="sm:text-4xl noto">We're here for you</p>
-        <p class="sm:text-sm">
+      <div
+        class="sm:w-[30%] w-[70%] text-center text-white flex flex-col space-y-2 sm:space-y-4"
+      >
+        <p class="sm:text-4xl text-xl noto">We're here for you</p>
+        <p class="sm:text-sm text-sm">
           Do you have something in mind? reach out to our support team today
         </p>
-        <div class="w-full flex justify-center">
+        <div class="w-full sm:p-0 py-2 flex justify-center">
           <button
-            class="sm:w-[10em] sm:py-4 noto rounded-full duration-150 hover:bg-[#bf3902] text-sm text-white bg-[#e65218]"
+            class="sm:w-[10em] w-[8em] py-1.5 sm:py-4 noto rounded-full duration-150 hover:bg-[#bf3902] text-sm text-white bg-[#e65218]"
           >
             Contact Us
           </button>

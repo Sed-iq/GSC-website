@@ -23,20 +23,28 @@
     <title>Grown&Sexy</title>
   </head>
   <body class="bg-[#f1f1f1]">
-    <%- include("partials/dashboard-heading.ejs") -%>
+    <div class="w-full relative">
+      <div
+        class="absolute z-20 flex sm:justify-start justify-center h-full px-3 items-center right-0 top-0"
+      >
+        <p class="text-xs noto"><%= data.username %></p>
+      </div>
+      <%- include("partials/dashboard-heading.ejs") -%>
+    </div>
+
     <div
       id="hero-section-dashboard"
-      class="sm:h-[29em] text-white center border-black"
+      class="h-[29em] text-white center border-black"
     >
       <div class="sm:w-[70%] center sm:space-y-5 flex-col">
-        <p class="noto text-center sm:text-4xl">
+        <p class="noto text-center text-2xl sm:text-4xl">
           Fun, Dating and Connection <br />
           All in One Place
         </p>
         <div class="center w-full">
           <a href="/dashboard/events">
             <button
-              class="sm:w-[9em] noto rounded-full text-white text-sm py-2 hover:bg-[#bf3902] bg-[#e65218]"
+              class="w-[9em] noto rounded-full text-white text-sm py-2 hover:bg-[#bf3902] bg-[#e65218]"
             >
               Go to events
             </button>
@@ -44,84 +52,94 @@
         </div>
       </div>
     </div>
-    <div class="sm:p-6">
+    <div class="p-6">
       <p class="noto text-sm text-gray-800">Browse Category</p>
       <p class="sm:text-2xl noto text-slate-900">Lagos</p>
       <div class="flex my-3 items-center space-x-3">
         <button
-          class="sm:w-[10em] rounded-full text-xs border-[.5px] border-gray-400 text-gray-700 py-2"
+          class="w-[10em] rounded-full text-xs border-[.5px] border-gray-400 text-gray-700 py-2"
         >
           Change Location
         </button>
 
         <button
-          class="sm:w-[8.9em] rounded-full text-xs border-[.5px] border-gray-400 text-gray-700 py-2"
+          class="w-[8.9em] rounded-full text-xs border-[.5px] border-gray-400 text-gray-700 py-2"
         >
           Filter by Date
         </button>
       </div>
     </div>
     <div class="">
-      <div class="sm:flex sm:py-[2.5em] flex-wrap justify-center items-center">
-        <!-- <div class="sm:w-[70%] border-2"></div> -->
+      <div
+        class="sm:flex sm:p-0 px-4 sm:flex-row flex-col sm:space-y-0 space-y-4 sm:py-[2.5em] flex-wrap sm:justify-center items-center"
+      >
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Color Party
           </div>
         </div>
 
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Line Dancing
           </div>
         </div>
 
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Karaoke Fun
           </div>
         </div>
 
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Fellas Only
           </div>
         </div>
 
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Girls Only
           </div>
         </div>
         <div
-          class="sm:w-[25%] flex items-end sm:h-[10.5em] bg-blue-500 text-white event m-2 rounded-xl"
+          class="sm:w-[25%] w-full h-[12em] flex my-2 items-end sm:h-[10.5em] bg-blue-500 text-white event sm:p-0 sm:m-2 rounded-xl"
         >
           <div
-            class="sm:p-[1em] w-full backdrop-blur-md rounded-b-xl noto text-sm"
+            class="sm:p-[1em] sm:bg-transparent bg-[#9494947c] sm:h-auto w-full backdrop-blur p-3 rounded-b-xl noto text-sm"
           >
             Speed Dating
           </div>
         </div>
+      </div>
+      <div class="m-2 sm:p-0 px-5 py-3">
+        <form action="/logout" method="post">
+          <button
+            class="min-w-[5em] py-1.5 border-[.5px] text-gray-800 border-gray-600 rounded-full noto text-sm"
+          >
+            Logout
+          </button>
+        </form>
       </div>
     </div>
     <%- include("partials/footer.ejs") -%>

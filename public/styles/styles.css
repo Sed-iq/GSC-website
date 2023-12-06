@@ -16,6 +16,25 @@ img {
   pointer-events: none;
 }
 
+@media (max-width: 640px) {
+  #hero-section-dashboard {
+    background-size: cover;
+    background-position: center;
+  }
+  #hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .latest-event {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #testimonial {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.603);
+  }
+}
 @media (min-width: 640px) {
   #testimonial {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.603);
@@ -36,37 +55,43 @@ img {
     background-position: center;
     background-repeat: no-repeat;
   }
-  .event:nth-child(1) {
-    background-image: url(/public/images/event1.jpeg);
-    background-size: cover;
-    background-position-y: -3em;
-  }
-  .event:nth-child(2) {
-    background-image: url(/public/images/event2.jpg);
-    background-size: cover;
-    background-position-y: -3em;
-  }
-  .event:nth-child(3) {
-    background-image: url(/public/images/event3.jpeg);
-    background-size: cover;
-    background-position-y: -3em;
-  }
-  .event:nth-child(4) {
-    background-image: url(/public/images/event4.jpeg);
-    background-size: cover;
-    background-position-y: -3em;
-  }
-  .event:nth-child(5) {
-    background-image: url(/public/images/event5.jpeg);
-    background-size: cover;
-    background-position-y: -3em;
-  }
-  .event:nth-child(6) {
-    background-image: url(/public/images/event6.jpeg);
-    background-size: cover;
-    background-position-y: -3em;
-  }
 }
+.event:nth-child(1) {
+  background-image: url(/public/images/event1.jpeg);
+  background-size: cover;
+  background-position-y: -3em;
+}
+
+.event:nth-child(2) {
+  background-image: url(/public/images/event2.jpg);
+  background-size: cover;
+  background-position-y: -3em;
+}
+
+.event:nth-child(3) {
+  background-image: url(/public/images/event3.jpeg);
+  background-size: cover;
+  background-position-y: -3em;
+}
+
+.event:nth-child(4) {
+  background-image: url(/public/images/event4.jpeg);
+  background-size: cover;
+  background-position-y: -3em;
+}
+
+.event:nth-child(5) {
+  background-image: url(/public/images/event5.jpeg);
+  background-size: cover;
+  background-position-y: -3em;
+}
+
+.event:nth-child(6) {
+  background-image: url(/public/images/event6.jpeg);
+  background-size: cover;
+  background-position-y: -3em;
+}
+
 #membership-card {
   background-image: url(/public/images/membership-card.png);
   background-size: cover;

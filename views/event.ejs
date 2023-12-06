@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/public/images/GSC_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/public/styles/design.css" />
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <title>GSC | Process Subscription</title>
+  </head>
+  <body class="min-h-screen bg-[#eeeeee] flex flex-col">
+    <%- include("partials/dashboard-heading.ejs") -%>
+
+    <div
+      style="
+        background-image: url(/public/images/latest_event3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+      class="center h-[31em] flex-col space-y-2"
+    ></div>
+    <div
+      class="sm:px-[2em] sm:py-[1.4em] justify-center sm:space-y-0 space-y-3 flex-1 flex sm:flex-row flex-col"
+    >
+      <div class="sm:flex-grow-[.5] sm:w-[50%] flex flex-col space-y-1 p-2">
+        <p class="text-sm text-gray-500">Karaoke</p>
+        <p class="text-xl noto sm:font-medium font-semibold text-gray-900">
+          Singles Night Out
+        </p>
+        <p class="text-sm sm:p-0 p-1.5 sm:w-[80%] text-gray-800">
+          Are you single and ready to mingle? Then join us for a fun night of
+          karaoke and socializing with other singles in the city! This is the
+          perfect opportunity to let loose, belt out your favorite tunes, and
+          meet new people.
+        </p>
+        <div class="sm:py-[2em] space-y-2 sm:space-y-3">
+          <p class="text-xl noto font-semibold sm:font-medium text-gray-900">
+            About Event
+          </p>
+          <p class="text-sm sm:p-0 p-1.5 sm:w-[80%] text-gray-800">
+            No matter what your singing skills are, you're sure to have a blast
+            at our karaoke singles night. We'll have a huge selection of songs
+            to choose from, so you're sure to find something you love. And if
+            you're feeling nervous, don't worry - everyone is there to have a
+            good time.
+          </p>
+          <p class="text-sm sm:w-[80%] sm:p-0 p-1.5 text-gray-800">
+            In addition to karaoke, we'll also have plenty of other activities
+            to keep you entertained. We'll have icebreaker games, social mixers,
+            and more. So come on out and meet some new people!
+          </p>
+        </div>
+        <div class="sm:space-y-4 space-y-2 flex flex-col">
+          <div class="flex flex-col space-y-2 sm:space-y-3">
+            <div class="flex items-center space-x-2 sm:space-x-3">
+              <i class="fa fa-ticket"></i>
+              <p class="font-semibold">Mobile Tickets</p>
+            </div>
+            <p class="text-sm sm:p-0 px-3 text-gray-700">
+              Tickets will be transferred outside at SeatGreek to your contact
+              email
+            </p>
+          </div>
+
+          <div class="flex flex-col space-y-1.5 sm:space-y-3">
+            <div class="flex items-center space-x-2 sm:space-x-3">
+              <i class="fa fa-shield"></i>
+              <p class="font-semibold">Buyer Guarantee protected</p>
+            </div>
+            <p class="text-sm sm:p-0 px-3 text-gray-700">
+              Every ticket is protected. If your event gets cancelled, we'll
+              make it right.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:flex-grow-[.485] w-full sm:w-[50%] items-start sm:flex sm:justify-center p-2"
+      >
+        <div
+          class="sm:px-[1.2em] px-[1.34em] pb-[1.3em] sm:py-[1.3em] sm:shadow-md sm:bg-white flex flex-col space-y-2 rounded-xl sm:w-[70%]"
+        >
+          <p class="text-gray-800 text-xl font-semibold">Singles Night Out</p>
+          <p class="text-gray-700 text-sm">Sun Dec 10 at 7:00pm</p>
+          <p class="text-gray-700 text-sm">Old Carolina</p>
+          <div class="flex sm:first-line:py-3 justify-between items-center">
+            <p class="text-sm text-gray-800 font-semibold">Tickets</p>
+            <div class="flex items-center space-x-3">
+              <i
+                class="fa text-lg cursor-pointer text-gray-400 fa-minus-square"
+              ></i>
+              <p class="text-xs">1</p>
+              <i
+                class="fa text-lg cursor-pointer text-blue-700 fa-plus-square"
+              ></i>
+            </div>
+          </div>
+          <div class="flex sm:first-line:py-3 justify-between items-center">
+            <p class="text-sm text-gray-800">Price</p>
+            <p class="text-sm noto font-semibold">$250</p>
+          </div>
+          <div
+            class="p-2 rounded-lg flex flex-col space-y-2 bg-[#bf3902] text-white"
+          >
+            <div class="flex justify-between items-center">
+              <p class="text-sm">Discount Price</p>
+              <p class="noto text-sm font-medium">$180</p>
+            </div>
+            <p class="text-xs underline">
+              Upgrade to Pro to enjoy discount prices
+            </p>
+          </div>
+
+          <div class="sm:py-[1em] flex justify-between items-center">
+            <p class="font-semibold">Total</p>
+            <p class="font-semibold noto">$250</p>
+          </div>
+          <a href="/dashboard/pay/details" class="w-full">
+            <button
+              type="submit"
+              class="noto bg-[#bf3902] hover:shadow-lg duration-100 text-white text-sm rounded-full w-full py-2"
+            >
+              Continue with process
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w-full my-3 sm:p-0 p-6 flex flex-col space-y-3 sm:px-[4em] sm:py-[1.2em] bg-white"
+    >
+      <p class="text-lg sm:text-left text-center font-semibold">
+        More Events You May Love
+      </p>
+      <div
+        class="sm:flex sm:w-full w-full sm:flex-row sm:p-0 px-6 flex flex-col space-y-7 sm:py-[2.5em] flex-wrap sm:space-y-4 justify-center items-center"
+      >
+        <!-- <div class="sm:w-[70%] border-2"></div> -->
+        <a
+          href="/dashboard/events/event1"
+          class="sm:w-[28%] w-full flex flex-col space-y-2.5 sm:space-y-3"
+        >
+          <div
+            style="background-image: url(/public/images/latest_event1.png)"
+            class="sm:w-[90%] latest-event flex items-end h-[16em] sm:h-[14.5em] bg-blue-500 text-white sm:m-2 rounded-xl"
+          ></div>
+          <div
+            class="flex sm:items-start items-center flex-col sm:space-y-1 sm:pl-3"
+          >
+            <p class="noto font-semibold">Singles Night Out</p>
+            <p class="text-sm text-gray-700">Nov 5 - Old Caroline</p>
+            <p class="noto sm:font-normal font-semibold sm:text-sm">
+              From $300.00
+            </p>
+          </div>
+        </a>
+        <a
+          href="/dashboard/events/event1"
+          class="sm:w-[28%] w-full flex flex-col space-y-2.5 sm:space-y-3"
+        >
+          <div
+            style="background-image: url(/public/images/latest_event2.png)"
+            class="sm:w-[90%] latest-event flex items-end h-[16em] sm:h-[14.5em] bg-blue-500 text-white sm:m-2 rounded-xl"
+          ></div>
+          <div
+            class="flex sm:items-start items-center flex-col sm:space-y-1 sm:pl-3"
+          >
+            <p class="noto font-semibold">Singles Night Out</p>
+            <p class="text-sm text-gray-700">Nov 5 - Old Caroline</p>
+            <p class="noto sm:font-normal font-semibold sm:text-sm">
+              From $300.00
+            </p>
+          </div>
+        </a>
+        <a
+          href="/dashboard/events/event1"
+          class="sm:w-[28%] w-full flex flex-col space-y-2.5 sm:space-y-3"
+        >
+          <div
+            style="background-image: url(/public/images/latest_event3.png)"
+            class="sm:w-[90%] latest-event flex items-end h-[16em] sm:h-[14.5em] bg-blue-500 text-white sm:m-2 rounded-xl"
+          ></div>
+          <div
+            class="flex sm:items-start items-center flex-col sm:space-y-1 sm:pl-3"
+          >
+            <p class="noto font-semibold">Singles Night Out</p>
+            <p class="text-sm text-gray-700">Nov 5 - Old Caroline</p>
+            <p class="noto sm:font-normal font-semibold sm:text-sm">
+              From $300.00
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <%- include("partials/footer.ejs") -%>
+  </body>
+</html>
